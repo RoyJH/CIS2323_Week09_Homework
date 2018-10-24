@@ -11,7 +11,7 @@ public class setupCheckerBoard{
 		// p1.setCaptive(true);
 		// p1.setPosition(0,0);
 		// p1.printInfo();
-		try{
+		//try{
 		for(int i = 0; i < 32; i++){
 			//String Id = String.valueOf(pieceId);
 			CheckersPiece Id = new CheckersPiece();
@@ -21,8 +21,8 @@ public class setupCheckerBoard{
 			Id.setid(pieceId);
 			Id.printInfo();
 			pieceId++;
-			if (pieceId % 2 == 0){Id.isValid();}
-			else{};
+			//if (pieceId % 2 == 0){Id.isValid();}
+			//else{};
 		}		
 		for(int i = 32; i >= 32 && i < 64; i++){
 			
@@ -35,8 +35,8 @@ public class setupCheckerBoard{
 			Id.printInfo();
 			pieceId++;
 		}
-		} catch(InvalidMoveException ex){
-				System.out.println("That move is invalid");
+		//} catch(InvalidMoveException ex){
+		//		System.out.println("That move is invalid");
 		}
-	}
+	//}
 }
