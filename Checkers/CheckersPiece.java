@@ -73,4 +73,13 @@ public class CheckersPiece{
 			+ "and is located at " + xPos + ", " + yPos + "\n"
 			+ "It's piece ID is " +  id);
 		}
+	public String isValid() throws InvalidMoveException {
+		//int pieceId = Id.setCaptive();
+		
+		if(id % 2 == 0){
+			return "Valid and working";
+		} else {
+			throw (new InvalidMoveException());
+		}
+	}
 }
