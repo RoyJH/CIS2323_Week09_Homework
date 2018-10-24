@@ -22,10 +22,14 @@ public class CheckersPiece{
 	public int gety(){
 		return yPos;
 	}
-	public CheckersPiece(){
-		id=numberOPieces;
-		numberOPieces++;
-	}
+	// public CheckersPiece(){
+		// new CheckersPiece(numberOPieces);
+		// numberOPieces.setColor("red");
+		// numberOPieces.setPosition(x,y);
+		// numberOPieces.setCaptive(false);
+		// numberOPieces.kinged(false);
+		// numberOPieces++;
+	// }
 		
 	public void setColor(String c){
 		color = c;
@@ -34,6 +38,12 @@ public class CheckersPiece{
 	public String getColor(){
 		return color;
 		}
+	public void setid(int k){
+		id = k;
+	}
+	public int getid(){
+		return id;
+	}
 	public void setCaptive(Boolean cap){
 		if (cap==true){
 			captured="captured";
@@ -60,6 +70,7 @@ public class CheckersPiece{
 	public void printInfo(){
 			System.out.println("The piece is " + captured + "\n"
 			+ "its color is " + color + "\n"
-			+ "and is located at " + xPos + ", " + yPos);
+			+ "and is located at " + xPos + ", " + yPos + "\n"
+			+ "It's piece ID is " +  id);
 		}
 }
